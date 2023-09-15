@@ -1,3 +1,4 @@
+using static System.Math;
 namespace Calculator_HW2
 {
     public partial class Calculator : Form
@@ -9,17 +10,25 @@ namespace Calculator_HW2
 
         private void button16_Click(object sender, EventArgs e)
         {
-
+            Output.Text += "-";
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-
+            Output.Text += "/";
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                double ans = Sqrt(Double.Parse(Output.Text));
+                Output.Text = ans.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -79,6 +88,39 @@ namespace Calculator_HW2
             {
                 Output.Text += ".";
             }
+        }
+
+        private void Add_Click(object sender, EventArgs e)
+        {
+            Output.Text += "+";
+        }
+
+        private void Multiply_Click(object sender, EventArgs e)
+        {
+            Output.Text += "*";
+        }
+
+        private void Square_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double ans = Pow(Double.Parse(Output.Text), 2);
+                Output.Text = ans.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void Clear_Click(object sender, EventArgs e)
+        {
+            Output.Text = "";
+        }
+
+        private void Calculate_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

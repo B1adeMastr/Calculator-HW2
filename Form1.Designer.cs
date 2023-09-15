@@ -31,7 +31,7 @@
             Decimal = new Button();
             Num0 = new Button();
             Clear = new Button();
-            Equals = new Button();
+            Calculate = new Button();
             Num3 = new Button();
             Num2 = new Button();
             Num1 = new Button();
@@ -80,15 +80,17 @@
             Clear.Tag = "Clear";
             Clear.Text = "C";
             Clear.UseVisualStyleBackColor = true;
+            Clear.Click += Clear_Click;
             // 
-            // Equals
+            // Calculate
             // 
-            Equals.Location = new Point(543, 357);
-            Equals.Name = "Equals";
-            Equals.Size = new Size(208, 56);
-            Equals.TabIndex = 3;
-            Equals.Text = "=";
-            Equals.UseVisualStyleBackColor = true;
+            Calculate.Location = new Point(543, 357);
+            Calculate.Name = "Calculate";
+            Calculate.Size = new Size(208, 56);
+            Calculate.TabIndex = 3;
+            Calculate.Text = "=";
+            Calculate.UseVisualStyleBackColor = true;
+            Calculate.Click += Calculate_Click;
             // 
             // Num3
             // 
@@ -170,6 +172,7 @@
             Square.TabIndex = 11;
             Square.Text = "^2";
             Square.UseVisualStyleBackColor = true;
+            Square.Click += Square_Click;
             // 
             // Divide
             // 
@@ -189,6 +192,7 @@
             Multiply.TabIndex = 13;
             Multiply.Text = "*";
             Multiply.UseVisualStyleBackColor = true;
+            Multiply.Click += Multiply_Click;
             // 
             // Add
             // 
@@ -198,6 +202,7 @@
             Add.TabIndex = 18;
             Add.Text = "+";
             Add.UseVisualStyleBackColor = true;
+            Add.Click += Add_Click;
             // 
             // Subtract
             // 
@@ -243,6 +248,7 @@
             // 
             Output.Location = new Point(76, 24);
             Output.Name = "Output";
+            Output.ReadOnly = true;
             Output.Size = new Size(640, 23);
             Output.TabIndex = 19;
             Output.Tag = "Output";
@@ -268,7 +274,7 @@
             Controls.Add(Num3);
             Controls.Add(Num2);
             Controls.Add(Num1);
-            Controls.Add(Equals);
+            Controls.Add(Calculate);
             Controls.Add(Clear);
             Controls.Add(Num0);
             Controls.Add(Decimal);
@@ -283,7 +289,7 @@
         private Button Decimal;
         private Button Num0;
         private Button Clear;
-        private Button Equals;
+        private Button Calculate;
         private Button Num3;
         private Button Num2;
         private Button Num1;
