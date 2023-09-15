@@ -1,4 +1,6 @@
+using System.Data;
 using static System.Math;
+
 namespace Calculator_HW2
 {
     public partial class Calculator : Form
@@ -120,7 +122,16 @@ namespace Calculator_HW2
 
         private void Calculate_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                DataTable Calc = new DataTable();
+                var ans = Calc.Compute(Output.Text, "");
+                Output.Text = ans.ToString();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
