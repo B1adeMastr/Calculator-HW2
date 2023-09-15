@@ -52,34 +52,37 @@
             // 
             // Decimal
             // 
+            Decimal.BackColor = SystemColors.ActiveCaption;
             Decimal.Location = new Point(46, 356);
             Decimal.Name = "Decimal";
             Decimal.Size = new Size(75, 57);
             Decimal.TabIndex = 0;
             Decimal.Text = ".";
-            Decimal.UseVisualStyleBackColor = true;
+            Decimal.UseVisualStyleBackColor = false;
             Decimal.Click += Decimal_Click;
             // 
             // Num0
             // 
+            Num0.BackColor = SystemColors.ActiveCaption;
             Num0.Location = new Point(168, 356);
             Num0.Name = "Num0";
             Num0.Size = new Size(75, 57);
             Num0.TabIndex = 1;
             Num0.Tag = "Num0";
             Num0.Text = "0";
-            Num0.UseVisualStyleBackColor = true;
+            Num0.UseVisualStyleBackColor = false;
             Num0.Click += button2_Click;
             // 
             // Clear
             // 
+            Clear.BackColor = SystemColors.ActiveCaption;
             Clear.Location = new Point(289, 356);
             Clear.Name = "Clear";
             Clear.Size = new Size(75, 57);
             Clear.TabIndex = 2;
             Clear.Tag = "Clear";
             Clear.Text = "C";
-            Clear.UseVisualStyleBackColor = true;
+            Clear.UseVisualStyleBackColor = false;
             Clear.Click += Clear_Click;
             // 
             // Calculate
@@ -94,164 +97,183 @@
             // 
             // Num3
             // 
+            Num3.BackColor = SystemColors.ActiveCaption;
             Num3.Location = new Point(289, 294);
             Num3.Name = "Num3";
             Num3.Size = new Size(75, 57);
             Num3.TabIndex = 6;
             Num3.Text = "3";
-            Num3.UseVisualStyleBackColor = true;
+            Num3.UseVisualStyleBackColor = false;
             Num3.Click += Num3_Click;
             // 
             // Num2
             // 
+            Num2.BackColor = SystemColors.ActiveCaption;
             Num2.Location = new Point(168, 294);
             Num2.Name = "Num2";
             Num2.Size = new Size(75, 57);
             Num2.TabIndex = 5;
             Num2.Tag = "Num2";
             Num2.Text = "2";
-            Num2.UseVisualStyleBackColor = true;
+            Num2.UseVisualStyleBackColor = false;
             Num2.Click += button6_Click;
             // 
             // Num1
             // 
+            Num1.BackColor = SystemColors.ActiveCaption;
             Num1.Location = new Point(46, 294);
             Num1.Name = "Num1";
             Num1.Size = new Size(75, 57);
             Num1.TabIndex = 4;
             Num1.Tag = "Num1";
             Num1.Text = "1";
-            Num1.UseVisualStyleBackColor = true;
+            Num1.UseVisualStyleBackColor = false;
             Num1.Click += button7_Click;
             // 
             // Num6
             // 
+            Num6.BackColor = SystemColors.ActiveCaption;
             Num6.Location = new Point(289, 231);
             Num6.Name = "Num6";
             Num6.Size = new Size(75, 57);
             Num6.TabIndex = 9;
             Num6.Text = "6";
-            Num6.UseVisualStyleBackColor = true;
+            Num6.UseVisualStyleBackColor = false;
             Num6.Click += Num6_Click;
             // 
             // Num5
             // 
+            Num5.BackColor = SystemColors.ActiveCaption;
             Num5.Location = new Point(168, 231);
             Num5.Name = "Num5";
             Num5.Size = new Size(75, 57);
             Num5.TabIndex = 8;
             Num5.Text = "5";
-            Num5.UseVisualStyleBackColor = true;
+            Num5.UseVisualStyleBackColor = false;
             Num5.Click += Num5_Click;
             // 
             // Num4
             // 
+            Num4.BackColor = SystemColors.ActiveCaption;
             Num4.Location = new Point(46, 231);
             Num4.Name = "Num4";
             Num4.Size = new Size(75, 57);
             Num4.TabIndex = 7;
             Num4.Text = "4";
-            Num4.UseVisualStyleBackColor = true;
+            Num4.UseVisualStyleBackColor = false;
             Num4.Click += Num4_Click;
             // 
             // SQRT
             // 
+            SQRT.BackColor = SystemColors.GradientActiveCaption;
             SQRT.Location = new Point(676, 294);
             SQRT.Name = "SQRT";
             SQRT.Size = new Size(75, 57);
             SQRT.TabIndex = 12;
             SQRT.Text = "SQRT";
-            SQRT.UseVisualStyleBackColor = true;
+            SQRT.UseVisualStyleBackColor = false;
             SQRT.Click += button11_Click;
             // 
             // Square
             // 
+            Square.BackColor = SystemColors.GradientActiveCaption;
             Square.Location = new Point(543, 294);
             Square.Name = "Square";
             Square.Size = new Size(75, 57);
             Square.TabIndex = 11;
             Square.Text = "^2";
-            Square.UseVisualStyleBackColor = true;
+            Square.UseVisualStyleBackColor = false;
             Square.Click += Square_Click;
             // 
             // Divide
             // 
+            Divide.BackColor = SystemColors.GradientActiveCaption;
             Divide.Location = new Point(676, 231);
             Divide.Name = "Divide";
             Divide.Size = new Size(75, 57);
             Divide.TabIndex = 10;
             Divide.Text = "/";
-            Divide.UseVisualStyleBackColor = true;
+            Divide.UseVisualStyleBackColor = false;
             Divide.Click += button13_Click;
             // 
             // Multiply
             // 
+            Multiply.BackColor = SystemColors.GradientActiveCaption;
             Multiply.Location = new Point(543, 231);
             Multiply.Name = "Multiply";
             Multiply.Size = new Size(75, 57);
             Multiply.TabIndex = 13;
             Multiply.Text = "*";
-            Multiply.UseVisualStyleBackColor = true;
+            Multiply.UseVisualStyleBackColor = false;
             Multiply.Click += Multiply_Click;
             // 
             // Add
             // 
+            Add.BackColor = SystemColors.GradientActiveCaption;
             Add.Location = new Point(543, 168);
             Add.Name = "Add";
             Add.Size = new Size(75, 57);
             Add.TabIndex = 18;
             Add.Text = "+";
-            Add.UseVisualStyleBackColor = true;
+            Add.UseVisualStyleBackColor = false;
             Add.Click += Add_Click;
             // 
             // Subtract
             // 
+            Subtract.BackColor = SystemColors.GradientActiveCaption;
             Subtract.Location = new Point(676, 168);
             Subtract.Name = "Subtract";
             Subtract.Size = new Size(75, 57);
             Subtract.TabIndex = 17;
             Subtract.Text = "-";
-            Subtract.UseVisualStyleBackColor = true;
+            Subtract.UseVisualStyleBackColor = false;
             Subtract.Click += button16_Click;
             // 
             // Num9
             // 
+            Num9.BackColor = SystemColors.ActiveCaption;
             Num9.Location = new Point(289, 168);
             Num9.Name = "Num9";
             Num9.Size = new Size(75, 57);
             Num9.TabIndex = 16;
             Num9.Text = "9";
-            Num9.UseVisualStyleBackColor = true;
+            Num9.UseVisualStyleBackColor = false;
             Num9.Click += Num9_Click;
             // 
             // Num8
             // 
+            Num8.BackColor = SystemColors.ActiveCaption;
             Num8.Location = new Point(168, 168);
             Num8.Name = "Num8";
             Num8.Size = new Size(75, 57);
             Num8.TabIndex = 15;
             Num8.Text = "8";
-            Num8.UseVisualStyleBackColor = true;
+            Num8.UseVisualStyleBackColor = false;
             Num8.Click += Num8_Click;
             // 
             // Num7
             // 
+            Num7.BackColor = SystemColors.ActiveCaption;
             Num7.Location = new Point(46, 168);
             Num7.Name = "Num7";
             Num7.Size = new Size(75, 57);
             Num7.TabIndex = 14;
             Num7.Text = "7";
-            Num7.UseVisualStyleBackColor = true;
+            Num7.UseVisualStyleBackColor = false;
             Num7.Click += Num7_Click;
             // 
             // Output
             // 
+            Output.BackColor = SystemColors.ControlDark;
+            Output.Enabled = false;
+            Output.ForeColor = SystemColors.Info;
             Output.Location = new Point(76, 24);
             Output.Name = "Output";
             Output.ReadOnly = true;
             Output.Size = new Size(640, 23);
             Output.TabIndex = 19;
             Output.Tag = "Output";
+            Output.TextChanged += Output_TextChanged;
             // 
             // Calculator
             // 

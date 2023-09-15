@@ -128,10 +128,15 @@ namespace Calculator_HW2
                 var ans = Calc.Compute(Output.Text, "");
                 Output.Text = ans.ToString();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void Output_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
