@@ -1,6 +1,6 @@
 ﻿namespace Calculator_HW2
 {
-    partial class Form1
+    partial class Calculator
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Blank = new Button();
+            Decimal = new Button();
             Num0 = new Button();
             Clear = new Button();
             Equals = new Button();
             Num3 = new Button();
-            button6 = new Button();
-            button7 = new Button();
+            Num2 = new Button();
+            Num1 = new Button();
             Num6 = new Button();
             Num5 = new Button();
             Num4 = new Button();
@@ -50,13 +50,15 @@
             Output = new TextBox();
             SuspendLayout();
             // 
-            // Blank
+            // Decimal
             // 
-            Blank.Location = new Point(46, 356);
-            Blank.Name = "Blank";
-            Blank.Size = new Size(75, 57);
-            Blank.TabIndex = 0;
-            Blank.UseVisualStyleBackColor = true;
+            Decimal.Location = new Point(46, 356);
+            Decimal.Name = "Decimal";
+            Decimal.Size = new Size(75, 57);
+            Decimal.TabIndex = 0;
+            Decimal.Text = ".";
+            Decimal.UseVisualStyleBackColor = true;
+            Decimal.Click += Decimal_Click;
             // 
             // Num0
             // 
@@ -96,26 +98,29 @@
             Num3.TabIndex = 6;
             Num3.Text = "3";
             Num3.UseVisualStyleBackColor = true;
+            Num3.Click += Num3_Click;
             // 
-            // button6
+            // Num2
             // 
-            button6.Location = new Point(168, 294);
-            button6.Name = "button6";
-            button6.Size = new Size(75, 57);
-            button6.TabIndex = 5;
-            button6.Tag = "Num2";
-            button6.Text = "2";
-            button6.UseVisualStyleBackColor = true;
+            Num2.Location = new Point(168, 294);
+            Num2.Name = "Num2";
+            Num2.Size = new Size(75, 57);
+            Num2.TabIndex = 5;
+            Num2.Tag = "Num2";
+            Num2.Text = "2";
+            Num2.UseVisualStyleBackColor = true;
+            Num2.Click += button6_Click;
             // 
-            // button7
+            // Num1
             // 
-            button7.Location = new Point(46, 294);
-            button7.Name = "button7";
-            button7.Size = new Size(75, 57);
-            button7.TabIndex = 4;
-            button7.Tag = "Num1";
-            button7.Text = "1";
-            button7.UseVisualStyleBackColor = true;
+            Num1.Location = new Point(46, 294);
+            Num1.Name = "Num1";
+            Num1.Size = new Size(75, 57);
+            Num1.TabIndex = 4;
+            Num1.Tag = "Num1";
+            Num1.Text = "1";
+            Num1.UseVisualStyleBackColor = true;
+            Num1.Click += button7_Click;
             // 
             // Num6
             // 
@@ -125,6 +130,7 @@
             Num6.TabIndex = 9;
             Num6.Text = "6";
             Num6.UseVisualStyleBackColor = true;
+            Num6.Click += Num6_Click;
             // 
             // Num5
             // 
@@ -134,6 +140,7 @@
             Num5.TabIndex = 8;
             Num5.Text = "5";
             Num5.UseVisualStyleBackColor = true;
+            Num5.Click += Num5_Click;
             // 
             // Num4
             // 
@@ -143,6 +150,7 @@
             Num4.TabIndex = 7;
             Num4.Text = "4";
             Num4.UseVisualStyleBackColor = true;
+            Num4.Click += Num4_Click;
             // 
             // SQRT
             // 
@@ -209,6 +217,7 @@
             Num9.TabIndex = 16;
             Num9.Text = "9";
             Num9.UseVisualStyleBackColor = true;
+            Num9.Click += Num9_Click;
             // 
             // Num8
             // 
@@ -218,6 +227,7 @@
             Num8.TabIndex = 15;
             Num8.Text = "8";
             Num8.UseVisualStyleBackColor = true;
+            Num8.Click += Num8_Click;
             // 
             // Num7
             // 
@@ -227,6 +237,7 @@
             Num7.TabIndex = 14;
             Num7.Text = "7";
             Num7.UseVisualStyleBackColor = true;
+            Num7.Click += Num7_Click;
             // 
             // Output
             // 
@@ -236,7 +247,7 @@
             Output.TabIndex = 19;
             Output.Tag = "Output";
             // 
-            // Form1
+            // Calculator
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -255,27 +266,27 @@
             Controls.Add(Num5);
             Controls.Add(Num4);
             Controls.Add(Num3);
-            Controls.Add(button6);
-            Controls.Add(button7);
+            Controls.Add(Num2);
+            Controls.Add(Num1);
             Controls.Add(Equals);
             Controls.Add(Clear);
             Controls.Add(Num0);
-            Controls.Add(Blank);
-            Name = "Form1";
-            Text = "Form1";
+            Controls.Add(Decimal);
+            Name = "Calculator";
+            Text = "Calculator";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Button Blank;
+        private Button Decimal;
         private Button Num0;
         private Button Clear;
         private Button Equals;
         private Button Num3;
-        private Button button6;
-        private Button button7;
+        private Button Num2;
+        private Button Num1;
         private Button Num6;
         private Button Num5;
         private Button Num4;

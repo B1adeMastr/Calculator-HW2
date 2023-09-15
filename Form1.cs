@@ -1,8 +1,8 @@
 namespace Calculator_HW2
 {
-    public partial class Form1 : Form
+    public partial class Calculator : Form
     {
-        public Form1()
+        public Calculator()
         {
             InitializeComponent();
         }
@@ -14,15 +14,71 @@ namespace Calculator_HW2
 
         private void button13_Click(object sender, EventArgs e)
         {
+
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Output.Text += "0";
+        }
 
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Output.Text += "1";
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Output.Text += "2";
+        }
+
+        private void Num3_Click(object sender, EventArgs e)
+        {
+            Output.Text += "3";
+        }
+
+        private void Num4_Click(object sender, EventArgs e)
+        {
+            Output.Text += "4";
+        }
+
+        private void Num5_Click(object sender, EventArgs e)
+        {
+            Output.Text += "5";
+        }
+
+        private void Num6_Click(object sender, EventArgs e)
+        {
+            Output.Text += "6";
+        }
+
+        private void Num7_Click(object sender, EventArgs e)
+        {
+            Output.Text += "7";
+        }
+
+        private void Num8_Click(object sender, EventArgs e)
+        {
+            Output.Text += "8";
+        }
+
+        private void Num9_Click(object sender, EventArgs e)
+        {
+            Output.Text += "9";
+        }
+
+        private void Decimal_Click(object sender, EventArgs e)
+        {
+            int len = Output.Text.Length;
+            if (Output.Text[--len] != '.')
+            {
+                Output.Text += ".";
+            }
         }
     }
 }
