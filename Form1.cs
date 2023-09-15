@@ -6,5 +6,23 @@ namespace Calculator_HW2
         {
             InitializeComponent();
         }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
